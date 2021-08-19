@@ -1,3 +1,2 @@
 #!/bin/bash
-cd
-chmod u+x 2-bring_me_home
+cd chmod u+x 2-bring_me_home
