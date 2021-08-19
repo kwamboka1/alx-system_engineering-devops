@@ -1,2 +1,3 @@
 #!/bin/bash
-cd.. chmod u+x 7-movethatfile
+cd.. chmod u+x 10-back
+
