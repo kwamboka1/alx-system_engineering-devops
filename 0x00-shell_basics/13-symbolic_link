@@ -1,0 +1,2 @@
+#!/bin/bash
+ln /bin/ls/0x00-shell_basics/ _ls_ chmod u+x 13-symbolic_link
