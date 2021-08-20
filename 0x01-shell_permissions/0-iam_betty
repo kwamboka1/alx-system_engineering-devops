@@ -1,2 +1,2 @@
 #!/bin/bash
-s -l betty chmod u+x 0-iam_betty
+su -l betty
