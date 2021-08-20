@@ -1,2 +1,2 @@
 #!/bin/bash
-rmdir /tmp/my_first_directory chmod u+x 7-movethatfile
+rmdir /tmp/my_first_directory 
