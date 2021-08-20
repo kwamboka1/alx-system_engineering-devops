@@ -1,2 +1,2 @@
 #!/bin/bash
-rm /tmp/my_first_directory/betty chmod u+x 7-movethatfile
+rm /tmp/my_first_directory/betty 
