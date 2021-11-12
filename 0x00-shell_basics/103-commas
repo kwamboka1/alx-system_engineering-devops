@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -am --file-type
+ls --file-type -am
