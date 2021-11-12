@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 mv [A-Z]* tmp/u
+=======
+mv [A-Z]* /tmp/u
+>>>>>>> ca93a9491cf439a28e75c2b08ca6e207f6f1abcb
