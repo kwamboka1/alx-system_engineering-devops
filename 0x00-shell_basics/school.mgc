@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc /School/ ls -a
+touch school.mgc ls -a
