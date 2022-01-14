@@ -3,7 +3,7 @@
 Project done during **Software Engineering studies** at **ALX School**. It aims to learn about loops (`while`, `until` and `for`), condition statements (`if`, `else`, `elif` and `case`), shebangs and how to create SSH keys with **Bash**.
 
 ## Technologies
-* Scripts written in Bash 4.3.11(1)
+* Scripts written in Bash 5.0.17(1)
 * Tested on Ubuntu 20.04 LTS
 * All Bash scripts checked by Shellcheck (version 0.7.0)
 
