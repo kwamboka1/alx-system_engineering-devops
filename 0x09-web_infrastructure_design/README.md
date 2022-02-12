@@ -1,4 +1,4 @@
-<h1><style color="red">0x09. Web infrastructure design</style></h1>
+<h1>0x09. Web infrastructure design</h1>
 <hr>
 <h2>Description</h2>
 <br>
