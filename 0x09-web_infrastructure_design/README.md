@@ -7,3 +7,4 @@
 <h2>Authors</h2>
 <br>
 <p>Nandweza Allan</p>
+<p>Bruno Kwemoi</p>
