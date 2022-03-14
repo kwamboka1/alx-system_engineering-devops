@@ -21,3 +21,7 @@ All of the following folders are projects done during the studies:
 | [`0x07-networking_basics`]| It aims to learn about what is an OSI model, LAN, WAN, IP address, localhost, subnet and TCP/UDP |
 | [`0x08-networking_basics_2`]| It aims to learn about what is localhost/127.0.0.1, what is 0.0.0.0, what is `/etc/hosts` and how to display the machine's active network interfaces |
 | [`0x09-web_infrastructure_design`]| It aims to learn about how to design a Web Infrastructure |
+| [`0x0A-configuration_management`]| It aims to learn about server configuration management using Puppet |
+| [`0x0B-ssh`]| It aims to learn about what is a SSH, how to create an SSH RSA key pair and how to connect to a remote host using SSH |
+| [`0x0C-web_server`]| It aims to learn about the roles of web servers and their processes (parent and child), and DNS roles |
+| [`0x0D-web_stack_debugging_0`]| It aims to learn about how to debug a webstack |
