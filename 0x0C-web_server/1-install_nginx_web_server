@@ -2,5 +2,8 @@
 # Script that installs Nginx server
 apt-get -y update
 apt-get -y install nginx
+chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
+chmod -R 755 /var/www
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
+ufw allow 'NginX HTTP'
 service nginx start
