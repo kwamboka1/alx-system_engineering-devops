@@ -4,5 +4,10 @@ apt-get -y update
 apt-get -y install nginx
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/custom_404.html
+
+chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
+chown -R "$USER":"$USER" /etc/nginx/sites-available/default
+chown -R "$USER":"$USER" /var/www/html
+
 sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/kwamboka1 permanent;\n\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}/" /etc/nginx/sites-available/default
 service nginx start
