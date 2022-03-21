@@ -9,5 +9,23 @@ chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
 chown -R "$USER":"$USER" /etc/nginx/sites-available/default
 chown -R "$USER":"$USER" /var/www/html
 
-sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/kwamboka1 permanent;\n\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}/" /etc/nginx/sites-available/default
+NotFound=\
+"server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/html;
+	index index.html index.htm index.nginx-debian.html;
+	server_name _;
+	location /redirect_me {
+		return 301 https://github.com/;
+	}
+ 	error_page 404 /404.html;
+    	location /404 {
+      		root /var/www/html;
+      		internal;
+    	}
+}"
+
+echo -e "$NotFound" > /etc/nginx/sites-available/default
+
 service nginx start
