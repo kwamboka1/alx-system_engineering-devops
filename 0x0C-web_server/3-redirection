@@ -15,7 +15,7 @@ redirection=\
 	index index.html index.htm index.nginx-debian.html;
 	server_name _;
 	location /redirect_me {
-		return 301 https://www.github.com;
+		return 301 https://github.com/;
 	}
 }"
 
