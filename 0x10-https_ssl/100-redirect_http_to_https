@@ -40,7 +40,7 @@ frontend http
 
 frontend www-https
         bind *:443 ssl crt /etc/letsencrypt/live/fullchain.pem
-        http-request set-header X-Served-By
+        http-request set-header X-Forwarded-Proto https
         default_backend web-backend
 
 backend web-backend
