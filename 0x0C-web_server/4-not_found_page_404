@@ -2,12 +2,13 @@
 # Script that installs Nginx server, redirects /redirect_me and customizes 404 not found
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
-sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
 
 sudo chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
 sudo chown -R "$USER":"$USER" /etc/nginx/sites-available/default
 sudo chown -R "$USER":"$USER" /var/www/html
+
+sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
+sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
 
 sudo sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/kwamboka1 permanent;\n\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}/" /etc/nginx/sites-available/default
 
