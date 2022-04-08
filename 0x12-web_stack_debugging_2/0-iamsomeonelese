@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Script that runs whoami command under a user parsed
-sudo -u "$1" 'whoami'
