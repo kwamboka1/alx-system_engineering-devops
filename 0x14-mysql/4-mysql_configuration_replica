@@ -38,13 +38,15 @@ log-error       = /var/log/mysql/error.log
 symbolic-links=0
 
 # setting server id
-server-id  =  1742-web-01
+server-id  =  1742-web-02
 
 # enable binary logging on the source.
 log_bin  = /var/log/mysql/mysql-bin.log
 
 # name of database to replicate.
 binlog_do_db = tyrell_corp
+
+relay-log       = /var/log/mysql/mysql-relay-bin.log
 
 # If you want to ignore replication of a database
 #  binlog_ignore_db = db_to_ignore
