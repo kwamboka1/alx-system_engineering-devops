@@ -38,7 +38,7 @@ log-error       = /var/log/mysql/error.log
 symbolic-links=0
 
 # setting server id
-server-id  =  1
+server-id  =  1742-web-01
 
 # enable binary logging on the source.
 log_bin  = /var/log/mysql/mysql-bin.log
