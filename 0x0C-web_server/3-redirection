@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Script that installs Nginx server and redirects /redirect_me
-apt-get -y update
-apt-get -y install nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
 sudo chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
 sudo chown -R "$USER":"$USER" /etc/nginx/sites-available/default
 
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
 
 redirection=\
 "server {
@@ -19,5 +19,5 @@ redirection=\
 	}
 }"
 
-echo -e "$redirection" > /etc/nginx/sites-available/default
-service nginx start
+sudo echo -e "$redirection" > /etc/nginx/sites-available/default
+sudo service nginx start
