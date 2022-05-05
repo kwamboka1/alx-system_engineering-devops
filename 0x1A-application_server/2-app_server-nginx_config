@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name 44.192.71.5;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/AirBnB_clone_v2;
+    }
+}
